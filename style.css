@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+}
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+}
+body{
+    font-size: 15px;
+    background-color: var(--Very-light-gray);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 850px;
+    height: 470px;
+    border-radius: 5px;
+}
+section{
+    display: inline-block;
+    width: 285px;
+    height: 400px;
+}
+.content{
+    color: white;
+    padding: 40px;
+}
+.content p{
+    margin: 30px 0 80px;
+    line-height: 25px;
+    color: var(--Transparent-white);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+.content h1{
+    margin: 20px 0;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2rem;
+    text-transform: uppercase;   
+    font-weight: 700; 
+}
+button{
+    padding: 10px;
+    font-weight: 600;
+    color:transparent;
+    outline: none;
+    border: none;
+    border-radius: 40px;
+    background-color:var(--Very-light-gray);
+    width: 120px;
+    height: 40px;
+}
+button:hover{
+    background-color: transparent;
+    color: var(--Very-light-gray);
+    border: 1px solid var(--Very-light-gray);
+    transition: 0.5s;
+}
+.sedan{
+    background-color: var(--Bright-orange);
+    height: 100%;
+}
+.sedan-t{
+    color:  var(--Bright-orange);
+}
+.SUVs{
+    background-color: var(--Dark-cyan);
+    height: 100%;
+}
+.SUVs-t{
+    color: var(--Dark-cyan);
+}
+.luxury{
+    background-color: var(--Very-dark-cyan);
+    height: 100%;
+}
+.luxury-t{
+    color: var(--Very-dark-cyan);
+}
+@media (max-width:375px){
+    .main{
+        grid-template-columns: 1fr;
+        margin: -40px 50%;
+        transform: translate(0px, -95px);
+    }
+}
